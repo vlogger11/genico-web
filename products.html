@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products — Genico Tech Solutions</title>
+  <meta name="description" content="Browse Genico Tech Solutions' full range of industrial automation products — Servo Motors, VFDs, PLCs, HMIs, SMPS and FL Switches.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="https://placehold.co/180x70/0a2a66/ffffff?text=GENICO" alt="Genico Tech Solutions logo">
+        <div>
+          <div class="brand-name">Genico Tech Solutions</div>
+          <div class="brand-gst">GST : 27CFBPC8539J1Z9</div>
+        </div>
+      </a>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Company Profile</a></li>
+          <li class="has-drop">
+            <a href="products.html">Our Products &#9662;</a>
+            <div class="dropdown">
+              <a href="products.html?cat=servo-motor">Mitsubishi Servo Motor</a>
+              <a href="products.html?cat=mitsubishi-vfd">Mitsubishi VFD</a>
+              <a href="products.html?cat=delta-vfd">Delta VFD</a>
+              <a href="products.html?cat=servo-drives">Servo Drives</a>
+              <a href="products.html?cat=mitsubishi-plc">Mitsubishi PLC</a>
+              <a href="products.html?cat=delta-plc">Delta PLC</a>
+              <a href="products.html?cat=delta-hmi">Delta HMI</a>
+              <a href="products.html?cat=mitsubishi-hmi">Mitsubishi HMI</a>
+              <a href="products.html?cat=smps">Power Supply (SMPS)</a>
+              <a href="products.html?cat=siemens-servo">Siemens Servo Motors</a>
+              <a href="products.html?cat=fl-switch">FL Switch</a>
+            </div>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary header-enquiry" href="contact.html">Enquiry</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <section class="breadcrumb">
+    <div class="container">
+      <h1>Our Products</h1>
+      <div class="crumbs"><a href="index.html">Home</a> / <span>Products</span></div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Full Catalogue</span>
+        <h2>Industrial Automation Products</h2>
+        <p>Filter by category and click any product to view full specifications.</p>
+      </div>
+      <div class="filters" id="filters"><!-- chips rendered by products.js --></div>
+      <div class="product-grid" id="product-grid"><!-- products rendered by products.js --></div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section alt">
+    <div class="container">
+      <div class="cta-band reveal-zoom">
+        <h2>Can't Find What You Need?</h2>
+        <p>Tell us your requirement and our team will source the right component for you.</p>
+        <a class="btn btn-ghost" href="contact.html">Request a Quote →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-about">
+        <div class="f-logo"><img src="https://placehold.co/180x70/0a2a66/ffffff?text=GENICO" alt="logo"><span>Genico Tech Solutions</span></div>
+        <p>Pune-based trader and supplier of high-quality industrial automation products. Established 2023.</p>
+        <small>GST : 27CFBPC8539J1Z9</small>
+      </div>
+      <div><h4>Quick Links</h4><ul class="f-links">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">Company Profile</a></li>
+        <li><a href="products.html">Our Products</a></li><li><a href="contact.html">Contact Us</a></li>
+      </ul></div>
+      <div><h4>Products</h4><ul class="f-links">
+        <li><a href="products.html?cat=servo-motor">Servo Motors</a></li><li><a href="products.html?cat=mitsubishi-vfd">Mitsubishi VFD</a></li>
+        <li><a href="products.html?cat=delta-vfd">Delta VFD</a></li><li><a href="products.html?cat=mitsubishi-plc">PLCs</a></li>
+        <li><a href="products.html?cat=fl-switch">FL Switch</a></li>
+      </ul></div>
+      <div class="f-contact"><h4>Get in Touch</h4>
+        <div class="fc-row">📍 <span>1, Flat No 06, Alokshree Sadan, Lane No. 2, Pune – 411038</span></div>
+        <div class="fc-row">📞 <span>07313726182</span></div>
+        <div class="fc-row">✉ <span>info@genicotechsolutions.net</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2023–2026 Genico Tech Solutions. All Rights Reserved.</div>
+  </footer>
+
+  <button class="to-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
