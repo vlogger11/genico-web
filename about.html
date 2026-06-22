@@ -1,168 +1,286 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Company Profile — Genico Tech Solutions</title>
-  <meta name="description" content="Learn about Genico Tech Solutions — a Pune-based trader and supplier of industrial automation products, established in 2023.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/chatbot.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Profile — Genico Tech Solutions</title>
+    <meta
+      name="description"
+      content="Learn about Genico Tech Solutions — a Pune-based trader and supplier of industrial automation products, established in 2023."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <img src="assets/logo.png" alt="Genico Tech Solutions logo" />
+          <div>
+            <div class="brand-name">Genico Tech Solutions</div>
+            <div class="brand-gst">GST : 27CFBPC8539J1Z9</div>
+          </div>
+        </a>
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Company Profile</a></li>
+            <li class="has-drop">
+              <a href="products.html">Our Products &#9662;</a>
+              <div class="dropdown">
+                <a href="products.html?cat=servo-motor"
+                  >Mitsubishi Servo Motor</a
+                >
+                <a href="products.html?cat=mitsubishi-vfd">Mitsubishi VFD</a>
+                <a href="products.html?cat=delta-vfd">Delta VFD</a>
+                <a href="products.html?cat=servo-drives">Servo Drives</a>
+                <a href="products.html?cat=mitsubishi-plc">Mitsubishi PLC</a>
+                <a href="products.html?cat=delta-plc">Delta PLC</a>
+                <a href="products.html?cat=delta-hmi">Delta HMI</a>
+                <a href="products.html?cat=mitsubishi-hmi">Mitsubishi HMI</a>
+                <a href="products.html?cat=smps">Power Supply (SMPS)</a>
+                <a href="products.html?cat=siemens-servo"
+                  >Siemens Servo Motors</a
+                >
+                <a href="products.html?cat=fl-switch">FL Switch</a>
+              </div>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-primary header-enquiry" href="contact.html"
+          >Enquiry</a
+        >
+        <button class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
 
-  <header class="header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html">
-        <img src="assets/logo.png" alt="Genico Tech Solutions logo">
+    <section class="breadcrumb">
+      <div class="container">
+        <h1>Company Profile</h1>
+        <div class="crumbs">
+          <a href="index.html">Home</a> / <span>Company Profile</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-img reveal-left">
+            <img src="assets/logo.png" alt="Genico Tech Solutions" />
+          </div>
+          <div class="about-text reveal-right">
+            <span
+              class="kicker"
+              style="color: var(--blue); font-weight: 700; letter-spacing: 2px"
+              >WHO WE ARE</span
+            >
+            <h2>A Trusted Name in Industrial Automation</h2>
+            <p>
+              Genico Tech Solutions is a Pune-based trader and supplier of
+              industrial automation products, established in 2023. We specialize
+              in delivering high-quality Mitsubishi VFD, Mitsubishi Servo Motor,
+              Servo Drives, Delta VFD and Mitsubishi PLC to industries seeking
+              reliable automation solutions.
+            </p>
+            <p>
+              Our company is committed to maintaining quality, authenticity, and
+              professional service in every transaction. Each product supplied
+              is carefully verified to ensure dependable performance and
+              suitability for demanding industrial applications.
+            </p>
+            <p>
+              With a strong customer-centric approach, we assist businesses in
+              selecting the right automation components based on their
+              operational needs. We aim to be a trusted partner for industries
+              requiring efficient, durable, and advanced automation products.
+            </p>
+            <a class="btn btn-primary" href="products.html"
+              >Explore Our Products →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KEY FACTS ===== -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Company Snapshot</span>
+          <h2>Key Facts</h2>
+        </div>
+        <div class="facts-grid">
+          <div class="fact reveal">
+            <strong>Nature of Business</strong><span>Trader & Supplier</span>
+          </div>
+          <div class="fact reveal">
+            <strong>Location</strong><span>Pune, Maharashtra, India</span>
+          </div>
+          <div class="fact reveal">
+            <strong>Year Established</strong><span>2023</span>
+          </div>
+          <div class="fact reveal">
+            <strong>GST Number</strong><span>27CFBPC8539J1Z9</span>
+          </div>
+          <div class="fact reveal">
+            <strong>Number of Employees</strong><span>03</span>
+          </div>
+          <div class="fact reveal">
+            <strong>Mode of Transport</strong><span>By Road</span>
+          </div>
+          <div class="fact reveal">
+            <strong>Mode of Payment</strong
+            ><span>NEFT / RTGS / IMPS, Cheque / DD, Cash</span>
+          </div>
+          <div class="fact reveal">
+            <strong>Brands We Carry</strong
+            ><span>Mitsubishi, Delta, Siemens, Meanwell</span>
+          </div>
+          <div class="fact reveal">
+            <strong>Industries Served</strong
+            ><span>Manufacturing, Packaging, Machinery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MISSION & VISION ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Our Purpose</span>
+          <h2>Mission & Vision</h2>
+        </div>
+        <div class="mv-grid">
+          <div class="mv-card reveal-left">
+            <h3>🎯 Our Mission</h3>
+            <p>
+              To deliver reliable, high-quality industrial automation products
+              that support the growth and efficiency of our clients. We provide
+              genuine solutions backed by professional service, ensuring every
+              customer receives the right product, timely delivery, and
+              dependable technical support.
+            </p>
+          </div>
+          <div class="mv-card reveal-right">
+            <h3>🚀 Our Vision</h3>
+            <p>
+              To become a leading and trusted name in the automation industry by
+              continually expanding our product range, strengthening client
+              partnerships, and adopting advanced technologies that enhance
+              performance, precision, and operational excellence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY US ===== -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Why Choose Us</span>
+          <h2>Our Commitment to You</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-ic">✅</div>
+            <h3>Quality-Assured</h3>
+            <p>
+              Verified for performance, durability and compliance with industry
+              standards.
+            </p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-ic">💰</div>
+            <h3>Transparent Pricing</h3>
+            <p>
+              Competitive pricing designed for long-term value without
+              compromise.
+            </p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-ic">🚚</div>
+            <h3>Timely Delivery</h3>
+            <p>Efficient logistics and well-organized supply operations.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-ic">🤝</div>
+            <h3>Customer-Centric</h3>
+            <p>Prompt communication and technical assistance at every stage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="f-about">
+          <div class="f-logo">
+            <img src="assets/logo.png" alt="Genico Tech Solutions logo" /><span
+              >Genico Tech Solutions</span
+            >
+          </div>
+          <p>
+            Pune-based trader and supplier of high-quality industrial automation
+            products. Established 2023.
+          </p>
+          <small>GST : 27CFBPC8539J1Z9</small>
+        </div>
         <div>
-          <div class="brand-name">Genico Tech Solutions</div>
-          <div class="brand-gst">GST : 27CFBPC8539J1Z9</div>
+          <h4>Quick Links</h4>
+          <ul class="f-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Company Profile</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
         </div>
-      </a>
-      <nav>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">Company Profile</a></li>
-          <li class="has-drop">
-            <a href="products.html">Our Products &#9662;</a>
-            <div class="dropdown">
-              <a href="products.html?cat=servo-motor">Mitsubishi Servo Motor</a>
+        <div>
+          <h4>Products</h4>
+          <ul class="f-links">
+            <li><a href="products.html?cat=servo-motor">Servo Motors</a></li>
+            <li>
               <a href="products.html?cat=mitsubishi-vfd">Mitsubishi VFD</a>
-              <a href="products.html?cat=delta-vfd">Delta VFD</a>
-              <a href="products.html?cat=servo-drives">Servo Drives</a>
-              <a href="products.html?cat=mitsubishi-plc">Mitsubishi PLC</a>
-              <a href="products.html?cat=delta-plc">Delta PLC</a>
-              <a href="products.html?cat=delta-hmi">Delta HMI</a>
-              <a href="products.html?cat=mitsubishi-hmi">Mitsubishi HMI</a>
-              <a href="products.html?cat=smps">Power Supply (SMPS)</a>
-              <a href="products.html?cat=siemens-servo">Siemens Servo Motors</a>
-              <a href="products.html?cat=fl-switch">FL Switch</a>
-            </div>
-          </li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      <a class="btn btn-primary header-enquiry" href="contact.html">Enquiry</a>
-      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-  </header>
-
-  <section class="breadcrumb">
-    <div class="container">
-      <h1>Company Profile</h1>
-      <div class="crumbs"><a href="index.html">Home</a> / <span>Company Profile</span></div>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section class="section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-img reveal-left">
-          <img src="https://placehold.co/640x460/1565d8/ffffff?text=Genico+Tech+Solutions" alt="Genico Tech Solutions">
+            </li>
+            <li><a href="products.html?cat=delta-vfd">Delta VFD</a></li>
+            <li><a href="products.html?cat=mitsubishi-plc">PLCs</a></li>
+            <li><a href="products.html?cat=fl-switch">FL Switch</a></li>
+          </ul>
         </div>
-        <div class="about-text reveal-right">
-          <span class="kicker" style="color:var(--blue);font-weight:700;letter-spacing:2px;">WHO WE ARE</span>
-          <h2>A Trusted Name in Industrial Automation</h2>
-          <p>Genico Tech Solutions is a Pune-based trader and supplier of industrial automation products, established in 2023. We specialize in delivering high-quality Mitsubishi VFD, Mitsubishi Servo Motor, Servo Drives, Delta VFD and Mitsubishi PLC to industries seeking reliable automation solutions.</p>
-          <p>Our company is committed to maintaining quality, authenticity, and professional service in every transaction. Each product supplied is carefully verified to ensure dependable performance and suitability for demanding industrial applications.</p>
-          <p>With a strong customer-centric approach, we assist businesses in selecting the right automation components based on their operational needs. We aim to be a trusted partner for industries requiring efficient, durable, and advanced automation products.</p>
-          <a class="btn btn-primary" href="products.html">Explore Our Products →</a>
+        <div class="f-contact">
+          <h4>Get in Touch</h4>
+          <div class="fc-row">
+            📍
+            <span
+              >1, Flat No 06, Alokshree Sadan, Lane No. 2, Pune – 411038</span
+            >
+          </div>
+          <div class="fc-row">📞 <span>07313726182</span></div>
+          <div class="fc-row">✉ <span>info@genicotechsolutions.net</span></div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="footer-bottom">
+        © 2023–2026 Genico Tech Solutions. All Rights Reserved.
+      </div>
+    </footer>
 
-  <!-- ===== KEY FACTS ===== -->
-  <section class="section alt">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">Company Snapshot</span>
-        <h2>Key Facts</h2>
-      </div>
-      <div class="facts-grid">
-        <div class="fact reveal"><strong>Nature of Business</strong><span>Trader & Supplier</span></div>
-        <div class="fact reveal"><strong>Location</strong><span>Pune, Maharashtra, India</span></div>
-        <div class="fact reveal"><strong>Year Established</strong><span>2023</span></div>
-        <div class="fact reveal"><strong>GST Number</strong><span>27CFBPC8539J1Z9</span></div>
-        <div class="fact reveal"><strong>Number of Employees</strong><span>03</span></div>
-        <div class="fact reveal"><strong>Mode of Transport</strong><span>By Road</span></div>
-        <div class="fact reveal"><strong>Mode of Payment</strong><span>NEFT / RTGS / IMPS, Cheque / DD, Cash</span></div>
-        <div class="fact reveal"><strong>Brands We Carry</strong><span>Mitsubishi, Delta, Siemens, Meanwell</span></div>
-        <div class="fact reveal"><strong>Industries Served</strong><span>Manufacturing, Packaging, Machinery</span></div>
-      </div>
-    </div>
-  </section>
+    <button class="to-top" aria-label="Scroll to top">↑</button>
 
-  <!-- ===== MISSION & VISION ===== -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">Our Purpose</span>
-        <h2>Mission & Vision</h2>
-      </div>
-      <div class="mv-grid">
-        <div class="mv-card reveal-left">
-          <h3>🎯 Our Mission</h3>
-          <p>To deliver reliable, high-quality industrial automation products that support the growth and efficiency of our clients. We provide genuine solutions backed by professional service, ensuring every customer receives the right product, timely delivery, and dependable technical support.</p>
-        </div>
-        <div class="mv-card reveal-right">
-          <h3>🚀 Our Vision</h3>
-          <p>To become a leading and trusted name in the automation industry by continually expanding our product range, strengthening client partnerships, and adopting advanced technologies that enhance performance, precision, and operational excellence.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== WHY US ===== -->
-  <section class="section alt">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">Why Choose Us</span>
-        <h2>Our Commitment to You</h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-card reveal"><div class="why-ic">✅</div><h3>Quality-Assured</h3><p>Verified for performance, durability and compliance with industry standards.</p></div>
-        <div class="why-card reveal"><div class="why-ic">💰</div><h3>Transparent Pricing</h3><p>Competitive pricing designed for long-term value without compromise.</p></div>
-        <div class="why-card reveal"><div class="why-ic">🚚</div><h3>Timely Delivery</h3><p>Efficient logistics and well-organized supply operations.</p></div>
-        <div class="why-card reveal"><div class="why-ic">🤝</div><h3>Customer-Centric</h3><p>Prompt communication and technical assistance at every stage.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="f-about">
-        <div class="f-logo"><img src="assets/logo.png" alt="Genico Tech Solutions logo"><span>Genico Tech Solutions</span></div>
-        <p>Pune-based trader and supplier of high-quality industrial automation products. Established 2023.</p>
-        <small>GST : 27CFBPC8539J1Z9</small>
-      </div>
-      <div><h4>Quick Links</h4><ul class="f-links">
-        <li><a href="index.html">Home</a></li><li><a href="about.html">Company Profile</a></li>
-        <li><a href="products.html">Our Products</a></li><li><a href="contact.html">Contact Us</a></li>
-      </ul></div>
-      <div><h4>Products</h4><ul class="f-links">
-        <li><a href="products.html?cat=servo-motor">Servo Motors</a></li><li><a href="products.html?cat=mitsubishi-vfd">Mitsubishi VFD</a></li>
-        <li><a href="products.html?cat=delta-vfd">Delta VFD</a></li><li><a href="products.html?cat=mitsubishi-plc">PLCs</a></li>
-        <li><a href="products.html?cat=fl-switch">FL Switch</a></li>
-      </ul></div>
-      <div class="f-contact"><h4>Get in Touch</h4>
-        <div class="fc-row">📍 <span>1, Flat No 06, Alokshree Sadan, Lane No. 2, Pune – 411038</span></div>
-        <div class="fc-row">📞 <span>07313726182</span></div>
-        <div class="fc-row">✉ <span>info@genicotechsolutions.net</span></div>
-      </div>
-    </div>
-    <div class="footer-bottom">© 2023–2026 Genico Tech Solutions. All Rights Reserved.</div>
-  </footer>
-
-  <button class="to-top" aria-label="Scroll to top">↑</button>
-
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/chatbot.js"></script>
-</body>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
 </html>
