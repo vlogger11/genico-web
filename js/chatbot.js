@@ -98,28 +98,34 @@
   function aboutMessage() {
     return `<strong>About ${COMPANY.name}</strong><br>${COMPANY.about}
       <div class="cb-mini-specs">
-        <div><span>Established</span><span>${COMPANY.established}</span></div>
         <div><span>Nature</span><span>${COMPANY.nature}</span></div>
         <div><span>Location</span><span>Pune, Maharashtra</span></div>
         <div><span>GST</span><span>${COMPANY.gst}</span></div>
-        <div><span>Team Size</span><span>${COMPANY.employees}</span></div>
       </div>
       <a class="cb-detail-link" href="about.html">Read full profile &rarr;</a>`;
   }
 
   function contactMessage() {
+    const chatPhone = "+91 95794 16667";
+    const whatsappNumber = "919579416667";
+    const whatsappText = encodeURIComponent(
+      `Hello ${COMPANY.name}, I want to inquire about your products.`
+    );
+
     return `<strong>Contact ${COMPANY.name}</strong><br>We'd love to hear from you.
       <div class="cb-mini-specs">
-        <div><span>📞 Phone</span><span>${COMPANY.phone}</span></div>
-        <div><span>✉ Email</span><span>${COMPANY.email}</span></div>
-        <div><span>🧾 GST</span><span>${COMPANY.gst}</span></div>
-        <div><span>💳 Payment</span><span>NEFT / Cheque / Cash</span></div>
-        <div><span>🚚 Transport</span><span>${COMPANY.transport}</span></div>
+        <div><span>Phone</span><span>${chatPhone}</span></div>
+        <div><span>Email</span><span>${COMPANY.email}</span></div>
+        <div><span>GST</span><span>${COMPANY.gst}</span></div>
+        <div><span>Payment</span><span>NEFT / Cheque / Cash</span></div>
+        <div><span>Transport</span><span>${COMPANY.transport}</span></div>
       </div>
-      <div style="margin-top:8px;font-size:0.82rem;color:var(--text-soft)">📍 ${COMPANY.address}</div>
-      <a class="cb-detail-link" href="contact.html">Open contact page &rarr;</a>`;
+      <div style="margin-top:8px;font-size:0.82rem;color:var(--text-soft)">Address: ${COMPANY.address}</div>
+      <div class="cb-contact-actions">
+        <a class="cb-detail-link cb-whatsapp-link" href="https://wa.me/${whatsappNumber}?text=${whatsappText}" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="cb-detail-link" href="tel:+919579416667">Call Now</a>
+      </div>`;
   }
-
   function productListMessage() {
     const items = CATEGORIES.filter((c) => c.id !== "all")
       .map(
