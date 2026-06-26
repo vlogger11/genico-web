@@ -50,11 +50,7 @@
   <header class="header">
     <div class="container header-inner">
       <a class="logo" href="index.html">
-        <img src="assets/logo.png" alt="Genico Tech Solutions logo">
-        <div>
-          <div class="brand-name">Genico Tech Solutions</div>
-          <div class="brand-gst">GST : 27CFBPC8539J1Z9</div>
-        </div>
+        <img src="assets/logo1.png" alt="Genico Tech Solutions logo">
       </a>
       <nav>
         <ul class="nav">
@@ -125,8 +121,12 @@
         </div>
 
         <!-- Form -->
-        <form class="contact-form reveal-right" id="inquiry-form" onsubmit="return false;">
+        <form class="contact-form reveal-right" id="inquiry-form" action="https://formsubmit.co/yasho@genicotechsolutions.com" method="POST">
           <h3 style="margin-bottom:18px;">Send an Inquiry</h3>
+          <input type="hidden" name="_subject" value="New product inquiry from Genico website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://www.genicotechsolutions.net/contact.html?submitted=true">
           <div class="form-row">
             <div class="field"><label>Full Name *</label><input type="text" name="name" required placeholder="Your name"></div>
             <div class="field"><label>Phone *</label><input type="tel" name="phone" required placeholder="Your phone"></div>
@@ -154,7 +154,7 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div class="f-about">
-        <div class="f-logo"><img src="assets/logo.png" alt="Genico Tech Solutions logo"><span>Genico Tech Solutions</span></div>
+        <div class="f-logo"><img src="assets/logo1.png" alt="Genico Tech Solutions logo"></div>
         <p>Pune-based trader and supplier of high-quality industrial automation products. Established 2023.</p>
         <small>GST : 27CFBPC8539J1Z9</small>
       </div>
@@ -182,7 +182,7 @@
   <script src="js/main.js"></script>
   <script src="js/chatbot.js"></script>
   <script>
-    /* Populate product dropdown + handle demo submit */
+    /* Populate product dropdown and handle FormSubmit redirect */
     document.addEventListener("DOMContentLoaded", () => {
       const sel = document.getElementById("product-select");
       if (sel && typeof PRODUCTS !== "undefined") {
@@ -202,8 +202,12 @@
           if (!name) return;
           note.textContent = "✅ Thank you, " + name + "! Your inquiry has been recorded. We'll contact you soon.";
           note.style.color = "#0a9d4a";
-          form.reset();
         });
+      }
+      const submitted = new URLSearchParams(location.search).get("submitted");
+      if (note && submitted === "true") {
+        note.textContent = "Thank you! Your inquiry has been sent. We'll contact you soon.";
+        note.style.color = "#0a9d4a";
       }
     });
   </script>
